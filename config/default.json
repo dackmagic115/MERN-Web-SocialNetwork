@@ -1,0 +1,4 @@
+{
+  "mongoURI": "You are mongodbURI",
+  "jwtSecret": "secret"
+}

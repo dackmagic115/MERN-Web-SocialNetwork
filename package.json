@@ -5,22 +5,31 @@
   "main": "server.js",
   "scripts": {
     "Start": "Node server",
-    "server": "nodemon server"
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run client\" \"npm run server\"",
+    "kill": "kill -9 $(lsof -t -i:5000)",
+    "killR": "kill -9 $(lsof -t -i:3000)"
   },
   "author": "Pakaphon pankong",
   "license": "UNLICENSED",
   "dependencies": {
+    "axios": "^0.19.0",
     "bcryptjs": "^2.4.3",
+    "concurrently": "^4.1.1",
     "config": "^3.1.0",
     "express": "^4.17.0",
     "express-validator": "^5.3.1",
     "gravatar": "^1.8.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.5.10",
+    "react": "^16.8.6",
+    "react-script": "^2.0.5",
+    "react-scripts": "^3.0.1",
     "request": "^2.88.0"
   },
   "devDependencies": {
-    "concurrently": "^4.1.0",
-    "nodemon": "^1.19.0"
+    "nodemon": "^1.19.1",
+    "redux-devtools-extension": "^2.13.8"
   }
 }
