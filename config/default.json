@@ -1,4 +1,4 @@
 {
-  "mongoURI": "You are mongodbURI",
+  "mongoURI": "mongodb+srv://maimeearai:maimeearai@maimeearaiconnector-mkz41.mongodb.net/test?retryWrites=true&w=majority",
   "jwtSecret": "secret"
 }
